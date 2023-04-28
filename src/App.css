@@ -1,42 +1,41 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.bot-army {
+  background-color: aquamarine;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.botsUl {
+  display: flex;
+  display: inline-flex;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.botsLi {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style: none;
+  border: 2px solid rgb(189, 189, 189);
+  border-radius: 10px;
+  margin: 5px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bots img {
+  width: 200px;
+  background-color: rgb(228, 228, 228);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bots #name {
+  padding-left: 20px;
 }
-
-.card {
-  padding: 2em;
+.bots #catch {
+  width: 200px;
+  font-size: 14px;
+  color: gray;
+  word-wrap: break-word;
+  padding: 0 20px;
+  padding-bottom: 10px;
 }
-
-.read-the-docs {
-  color: #888;
+.bots #stats {
+  padding-left: 20px;
+  color: gray;
+  border-top: 1px solid rgb(190, 190, 190);
+  padding-top: 10px;
 }
