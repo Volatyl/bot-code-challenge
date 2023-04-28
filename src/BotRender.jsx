@@ -4,14 +4,20 @@ import { ArmyContext } from "./Army";
 function BotRender({ data }) {
   const [armyData, setArmyData] = useContext(ArmyContext);
 
-  console.log("2bot " + armyData);
+  function handleClick(bot) {
+    if (armyData.includes(bot.id)) {
+      null;
+    } else {
+      setArmyData([...armyData, bot.id]);
+    }
+  }
 
   return (
     <div>
       {data.map((bot) => {
         return (
-          <li className="botsLi" key={bot.id}>
-            <div className="bots" onClick={(bot) => console.log(bot.name)}>
+          <li className="botsLi" key={bot.id} onClick={() => handleClick(bot)}>
+            <div className="bots">
               <img src={bot.avatar_url} alt="bot" />
               <p id="name">{bot.name}</p>
               <p id="catch">{bot.catchphrase}</p>

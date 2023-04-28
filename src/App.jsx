@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-      <p>VITE</p>
-      <YourBotArmy />
+      <h1>Bot Battlr</h1>
+      <YourBotArmy data={data}/>
       <BotCollection data={data} setData={setData} />
     </>
   );
