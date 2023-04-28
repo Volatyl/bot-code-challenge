@@ -6,7 +6,6 @@ import BotCollection from "./BotCollection";
 function App() {
   const [data, setData] = useState([]);
 
-  console.log(data);
   return (
     <>
       <p>VITE</p>

@@ -3,7 +3,7 @@ import BotRender from "./BotRender";
 
 function BotCollection({ data, setData }) {
   useEffect(() => {
-    fetch("http://localhost:3000/bots?limit=10")
+    fetch("http://localhost:3000/bots")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((error) => console.log(error));
